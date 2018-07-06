@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "comic sans ms", arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 170%;
+}
+
+.menu {
+	background-color: rgb(225, 225, 225);
+    border: 2px solid black;
+	position: relative;
+
+	/*margin: 5px;
+	padding: 30px 5px 5px 5px;*/
+}
+
+.menu-title {
+	border-bottom: 2px solid;
+	border-left: 2px solid;
+	width: 100px;
+	text-align: center;
+	font-size: 110%;
+	position: absolute;
+	right: 0;
+	margin: 0px;	
+}
+
+.menu-item1 {
+	background-color: rgb(204, 255, 255);
+}
+
+.menu-item2 {
+	background-color: rgb(204, 255, 204);
+}
+
+.menu-item3 {
+	background-color: rgb(255, 255, 204);
+}
+
+.menu-text {
+
+	margin-top: 30px;
+}
+
+/***** Desktop view *****/
+@media (min-width: 992px) {
+	.col-lg-4 {
+		float: left;
+		margin-right: 2%;		
+	}
+	.col-lg-4 {
+		width: 31%;
+	}
+}
+
+/***** Tablet view *****/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6, .col-md-12 {
+		float: left;
+		margin-right: 2%;
+		margin-bottom: 2%;
+	}
+	.col-md-6 {
+		width: 48%;
+	}
+	.col-md-12 {
+		width: 98%;
+	}
+	
+}
+
+/***** Mobile view *****/
+@media (max-width: 767px) {
+	.col-sm-12 {
+		float: left;
+		margin-right: 2%;
+		margin-bottom: 2%;
+	}
+	.col-sm-12 {
+		width: 98%;
+	}	
+}
